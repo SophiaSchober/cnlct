@@ -1,0 +1,4 @@
+ConnectP1, connectP2, connectP3, connectP4, scan are events.
+
+ConnectP2 happens before connectP4.
+Ensure that (ConnectP1, connectP2, connectP3, connectP4, scan) is tested.

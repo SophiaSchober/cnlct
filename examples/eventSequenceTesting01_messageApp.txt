@@ -1,0 +1,5 @@
+AddMessage, AddAttachment, AddSubject, EditMessage, EditSubject and AddRecipient are events.
+Exclude that EditMessage happens before AddMessage.
+Ensure that AddSubject happens before EditSubject.
+Ensure that (AddRecipient, AddSubject, AddMessage, EditMessage, AddAttachment, EditSubject) is tested.
+

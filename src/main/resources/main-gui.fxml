@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- // adapted from https://github.com/TobiasKain/Uhura/blob/master/src/main/resources/main_gui.fxml -->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane prefHeight="1000.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.tuwien.gui.controller.MainGuiController">
+    <center>
+        <TabPane fx:id="specificationTabPane">
+            <Tab closable="false" onSelectionChanged="#addTabClicked" style="-fx-font-size: 15px;" text="+">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0"/>
+            </Tab>
+        </TabPane>
+    </center>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem fx:id="openFileMenuItem" mnemonicParsing="false" onAction="#openFileClicked"
+                          text="Open Specification ..." accelerator="Shortcut+O"/>
+                <MenuItem fx:id="saveFileMenuItem" mnemonicParsing="false" onAction="#saveFileClicked"
+                          text="Save Specification ..." accelerator="Shortcut+S"/>
+                <MenuItem fx:id="exportTestsMenuItem" mnemonicParsing="false" onAction="#exportTestsClicked"
+                          text="Export Tests ..." accelerator="Shortcut+E"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Test-Configuration">
+                <RadioMenuItem mnemonicParsing="false" onAction="#inputParameterTestingSelected"
+                               text="Input Parameter / Configuration Testing" selected="true">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="testType"/>
+                    </toggleGroup>
+                </RadioMenuItem>
+                <RadioMenuItem mnemonicParsing="false" onAction="#eventSequenceTestingSelected"
+                               text="Event-Sequence Testing" toggleGroup="$testType"/>
+                <SeparatorMenuItem mnemonicParsing="false"/>
+                <RadioMenuItem mnemonicParsing="false" onAction="#pairwiseTestingSelected"
+                               text="Pairwise Testing" selected="true">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="testStrength"/>
+                    </toggleGroup>
+                </RadioMenuItem>
+                <RadioMenuItem mnemonicParsing="false" onAction="#threeWayTestingSelected"
+                               text="Three-Way Testing" toggleGroup="$testStrength"/>
+                <RadioMenuItem mnemonicParsing="false" onAction="#fourWayTestingSelected"
+                               text="Four-Way Testing" toggleGroup="$testStrength"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Hidden" visible="false">
+                <items>
+                    <MenuItem fx:id="newTabMenuItem" mnemonicParsing="false" onAction="#newTabClicked" text="New Tab"/>
+                    <MenuItem fx:id="generateMenuItem" mnemonicParsing="false" onAction="#generateClicked"
+                              text="Compute"/>
+                </items>
+            </Menu>
+        </MenuBar>
+    </top>
+</BorderPane>

@@ -1,0 +1,8 @@
+OS has values Windows, macOS and Linux.
+Browser has values Edge, Safari, Opera, Firefox.
+ScreenResolution has values r1280x720, r1920x1080 and r1366x768.
+Mode has values Fullscreen and Windowed.
+
+If Browser=Safari then OS=macOS.
+Exclude that OS=Linus and Browser=Edge.
+Ensure that OS=Windows and Browser = Firefox and ScreenResolution = r1920x1080 is tested.

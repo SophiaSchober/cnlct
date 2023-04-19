@@ -1,0 +1,12 @@
+params(yearsEmployed).
+params(carsSold).
+params(complaints).
+paramvals(yearsEmployed,9).
+paramvals(yearsEmployed,10).
+paramvals(carsSold,199).
+paramvals(carsSold,200).
+paramvals(complaints,4).
+paramvals(complaints,5).
+row(1,carsSold,199).
+row(1,complaints,4).
+row(1,yearsEmployed,9).

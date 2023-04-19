@@ -1,0 +1,5 @@
+carsSold has values 199, 200.
+yearsEmployed has values 9 and 10.
+complaints has values 4 and 5.
+
+Ensure that carsSold=199 and yearsEmployed=9 and complaints=4 is tested.

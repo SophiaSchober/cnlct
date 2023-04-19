@@ -1,0 +1,4 @@
+1 ; Event Definition; <event-1> {, <event-i>}*[ and <event-j>] are events.; AddMessage, AddAttachment, AddSubject, EditMessage, EditSubject and AddRecipient are events.
+2 ; Exclusion of Subsequences; Exclude that <event-1> happens before <event-2>. ; Exclude that EditMessage happens before AddMessage.
+3 ; Fixation of Subsequences; [Ensure that ]<event-1> happens before <event-2>. ; Ensure that AddSubject happens before EditSubject.
+4 ; Seed Test Definition; Ensure that (<event-1>, <event-2>, ..., <event-n>) is tested. ; Ensure that (AddRecipient, AddSubject, AddMessage, EditMessage, EditSubject) is tested.

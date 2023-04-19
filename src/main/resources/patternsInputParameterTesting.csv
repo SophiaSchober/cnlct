@@ -1,0 +1,4 @@
+1 ; Parameter Definition ; <parameter> has values <value-1> {, <value-i>}* and <value-n>. ; OS has values Windows, macOS and Linux.
+2 ; Specification of (Partial) Seed Tests ; Ensure that <parameter-1>=<value-1> and <parameter-2>=<value-2> {and <parameter-n>=<value-n>}*[ is tested]. ; Ensure that OS=Windows and Browser=Edge is tested.
+3 ; Exclusion of Combinations ; Exclude that <parameter-1>=<value-1> and <parameter-2>=<value-2> {and <parameter-n>=<value-n>}*. ; Exclude that OS=Linux and Browser=Edge.
+4 ; Conditional Requirements ; If <parameter-1>=<value-1> {and <parameter-i>=<value-i>}* then <parameter-n>=<value-n> {and <parameter-n+j>=<value-n+j>}*. ; If Browser=Safari then OS=macOs.
