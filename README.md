@@ -34,21 +34,21 @@ selected specification tab is displayed and can have test generation started.
 
 #### Input Parameter / Configuration Testing
 
-| Nr.                | Pattern Name | Sentence Pattern                                                 | Example                                             |
-|-----|--------|------------------------------------------------------------------|-----------------------------------------------------|
-| 1. | Parameter Definition | \<parameter> has values <value-1> {, <value-i>}* and <value-n>.  | OS has values Windows, macOS and Linux.             |
-| 2. | Specification of (Partial) Seed Tests | Ensure that <parameter-1>=<value-1> and <parameter-2>=<value-2> {and <parameter-n>=<value-n>}*[ is tested]. | Ensure that OS=Windows and Browser=Edge is tested.  |
-| 3. | Exclusion of Combinations | Exclude that <parameter-1>=<value-1> and <parameter-2>=<value-2> {and <parameter-n>=<value-n>}*. | Exclude that OS=Linux and Browser=Edge. |
-| 4. | Conditional Requirements | If <parameter-1>=<value-1> {and <parameter-i>=<value-i>}* then <parameter-n>=<value-n> {and <parameter-n+j>=<value-n+j>}*. | If Browser=Safari then OS=macOs. |
+| Nr.                | Pattern Name | Sentence Pattern                                                                                                           | Example                                             |
+|-----|--------|----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| 1. | Parameter Definition | \<parameter> has values \<value-1> {, \<value-i>}* and \<value-n>.                                                         | OS has values Windows, macOS and Linux.             |
+| 2. | Specification of (Partial) Seed Tests | Ensure that \<parameter-1>=\<value-1> and \<parameter-2>=\<value-2> {and \<parameter-n>=\<value-n>}*[ is tested].          | Ensure that OS=Windows and Browser=Edge is tested.  |
+| 3. | Exclusion of Combinations | Exclude that \<parameter-1>=\<value-1> and \<parameter-2>=\<value-2> {and \<parameter-n>=\<value-n>}*.                     | Exclude that OS=Linux and Browser=Edge. |
+| 4. | Conditional Requirements | If \<parameter-1>=\<value-1> {and \<parameter-i>=\<value-i>}* then \<parameter-n>=\<value-n> {and \<parameter-n+j>=\<value-n+j>}*. | If Browser=Safari then OS=macOs. |
 
 #### Event Sequence Testing
 
 | Nr. | Pattern Name          | Sentence Pattern | Example |
 |---|-----------------------|----|----|
-| 1. | Event Definition      | <event-1> {, <event-i>}*[ and <event-j>] are events. | AddMessage, AddAttachment, AddSubject, EditMessage, EditSubject and AddRecipient are events. | 
-| 2. | Exclusion of Subsequences | Exclude that <event-1> happens before <event-2>. | Exclude that EditMessage happens before AddMessage. |
-| 3. | Fixation of Subsequences | [Ensure that ]<event-1> happens before <event-2>. | Ensure that AddSubject happens before EditSubject. | 
-| 4. | Seed Test Definition  | Ensure that (<event-1>, <event-2>, ..., <event-n>) is tested. | Ensure that (AddRecipient, AddSubject, AddMessage, EditMessage, EditSubject) is tested. |
+| 1. | Event Definition      | \<event-1> {, \<event-i>}*[ and \<event-j>] are events. | AddMessage, AddAttachment, AddSubject, EditMessage, EditSubject and AddRecipient are events. | 
+| 2. | Exclusion of Subsequences | Exclude that \<event-1> happens before \<event-2>. | Exclude that EditMessage happens before AddMessage. |
+| 3. | Fixation of Subsequences | [Ensure that ]\<event-1> happens before \<event-2>. | Ensure that AddSubject happens before EditSubject. | 
+| 4. | Seed Test Definition  | Ensure that (\<event-1>, \<event-2>, ..., \<event-n>) is tested. | Ensure that (AddRecipient, AddSubject, AddMessage, EditMessage, EditSubject) is tested. |
 
 ### Generating Test-Cases
 Test-case generation can be started for the currently selected (and displayed) test specification by clicking the 
