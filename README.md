@@ -2,7 +2,7 @@
 
 The CNL-CT System provides a GUI for specifying pairwise, 3-way and 4-way Combinatorial Testing & Event Sequence Testing 
 scenarios in a simple Controlled Natural Language (CNL). After translating such a CNL-specification into an 
-ASP program and greedily solving the resulting program (in a row-by-row approach), test cases that a proper 
+ASP program and greedily solving the resulting program (in a row-by-row approach), test cases representing a 
 Covering Array of the desired strength for the described testing scenario are displayed in table-form.
 
 
